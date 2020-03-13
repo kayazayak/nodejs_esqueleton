@@ -1,0 +1,42 @@
+{
+  "name": "nodejs_esqueleton",
+  "version": "1.0.0",
+  "description": "NodeJS Script Generator Minified and Obfuscated",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dist": "rollup -c && npm run obfuscate && npm run minify",
+    "minify": "node ./build/minify.js",
+    "obfuscate": "node ./build/obfuscate.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kayazayak/nodejs_esqueleton.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "Minify",
+    "Obfuscate"
+  ],
+  "author": "Yamir Alvarez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kayazayak/nodejs_esqueleton/issues"
+  },
+  "homepage": "https://github.com/kayazayak/nodejs_esqueleton#readme",
+  "dependencies": {
+    "acorn": "^7.1.1",
+    "acorn-import-meta": "^1.0.0",
+    "fs": "0.0.1-security",
+    "javascript-obfuscator": "^0.25.4",
+    "maxmin": "^2.1.0",
+    "node-libcurl": "^2.0.3",
+    "obfuscator": "^0.5.4",
+    "rollup": "^2.0.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-uglify": "^6.0.4",
+    "shx": "^0.3.2",
+    "uglify-js": "^3.8.0",
+    "uglifycss": "0.0.29"
+  }
+}
